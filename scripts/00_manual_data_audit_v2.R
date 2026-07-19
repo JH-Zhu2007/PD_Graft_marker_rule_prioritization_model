@@ -1,26 +1,16 @@
 # ==============================================================================
 # 00_manual_data_audit_v2.R
-# 项目：PD干细胞治疗“功能身份—疾病脆弱性悖论”
-# 目的：审计手动下载的7个GEO数据，不下载数据、不做正式Seurat分析
-# v2修复：允许00_raw_data为空时正常生成文件夹和缺失文件报告
-# 适用：Windows + 32 GB RAM + 手动下载GEO
-# ==============================================================================
 
-# ----------------------------- 0. 用户只改这里 --------------------------------
+
 PROJECT_ROOT <- "D:/PD_Graft_Project"
 
-# 轻量文件检查允许4核；读取大型矩阵/RDS仍然顺序执行
 N_WORKERS_LIGHT <- 4L
 
-# 4.7 GB文件计算MD5会很慢，默认关闭
 CALCULATE_MD5 <- FALSE
 
-# 是否自动安装缺少的CRAN包
 AUTO_INSTALL_CRAN <- TRUE
-# ==============================================================================
 
 
-# ----------------------------- 1. 基础设置 -------------------------------------
 options(stringsAsFactors = FALSE)
 options(timeout = 600)
 set.seed(20260713)
@@ -98,7 +88,6 @@ geo_ids <- c(
   "GSE233885"
 )
 
-# 每个GEO都建立“原始下载”和“解压后”两个子文件夹
 for (geo in geo_ids) {
   dir.create(
     file.path(PROJECT_ROOT, "00_raw_data", geo, "00_downloaded"),
@@ -116,9 +105,6 @@ message("项目根目录：", PROJECT_ROOT)
 message("00阶段开始：只审计文件，不进行正式分析。")
 
 
-# ----------------------------- 2. 官方文件清单 ---------------------------------
-# exact_file：NCBI GEO页面列出的系列级补充文件
-# external_metadata：GEO本身不足以完成本项目时，需要额外手动下载的注释
 dataset_spec <- data.table(
   geo = geo_ids,
   data_type = c(
@@ -186,7 +172,6 @@ dataset_spec <- data.table(
 )
 
 
-# ----------------------------- 3. 辅助函数 -------------------------------------
 detect_compound_extension <- function(path) {
   nm <- tolower(basename(path))
   patterns <- c(
@@ -443,7 +428,6 @@ inspect_rds_object <- function(path) {
     assay_names = NA_character_
   )
 
-  # .RDS.gz可直接通过gzfile读取
   obj <- tryCatch({
     if (grepl("\\.gz$", path, ignore.case = TRUE)) {
       readRDS(gzfile(path, open = "rb"))
@@ -473,7 +457,6 @@ inspect_rds_object <- function(path) {
     result$assay_names <- paste(an, collapse = " | ")
   }
 
-  # Seurat对象：不触发正式分析，仅查看基本结构
   if (inherits(obj, "Seurat")) {
     result$n_features <- tryCatch(nrow(obj), error = function(e) NA_real_)
     result$n_cells <- tryCatch(ncol(obj), error = function(e) NA_real_)
@@ -485,7 +468,6 @@ inspect_rds_object <- function(path) {
     result$assay_names <- paste(an, collapse = " | ")
   }
 
-  # SingleCellExperiment
   if (inherits(obj, "SingleCellExperiment")) {
     result$n_features <- nrow(obj)
     result$n_cells <- ncol(obj)
@@ -497,7 +479,6 @@ inspect_rds_object <- function(path) {
     result$assay_names <- paste(an, collapse = " | ")
   }
 
-  # 普通矩阵或data.frame
   if (is.matrix(obj) || inherits(obj, "Matrix")) {
     result$n_features <- nrow(obj)
     result$n_cells <- ncol(obj)
@@ -514,7 +495,6 @@ inspect_rds_object <- function(path) {
 }
 
 
-# ----------------------------- 4. 扫描全部本地文件 -----------------------------
 all_files <- list.files(
   file.path(PROJECT_ROOT, "00_raw_data"),
   recursive = TRUE,
@@ -562,8 +542,6 @@ if (CALCULATE_MD5 && nrow(file_inventory) > 0L) {
   file_inventory[, md5 := NA_character_]
 }
 
-# 即使00_raw_data暂时为空，也预先建立后续会使用的检查列。
-# 这样第一次运行只负责创建文件夹时，不会因为“列不存在”而中断。
 inspection_defaults <- list(
   archive_status = character(),
   archive_n_files = integer(),
@@ -591,7 +569,6 @@ for (nm in names(inspection_defaults)) {
 }
 
 
-# ----------------------------- 5. 轻量并行检查 ---------------------------------
 future::plan(
   future::multisession,
   workers = min(N_WORKERS_LIGHT, 4L)
@@ -645,8 +622,6 @@ if (length(light_results) > 0L) {
 }
 
 
-# ----------------------------- 6. RDS顺序检查 ----------------------------------
-# 不能并行读取多个RDS，避免32GB内存下复制对象导致abort
 rds_files <- file_inventory[
   extension %in% c("rds", "rds.gz"),
   file_path
@@ -679,7 +654,6 @@ if (length(rds_files) > 0L) {
 }
 
 
-# ----------------------------- 7. 数据集完整性判断 -----------------------------
 check_exact_file <- function(geo, expected_string, inventory) {
   expected <- trimws(strsplit(expected_string, "\\|")[[1]])
   # data.table作用域避免冲突，使用普通向量筛选
@@ -719,7 +693,6 @@ geo_summary <- exact_checks[
   by = geo
 ]
 
-# 如果用户已经解压但没有保留tar，也把“有解压文件”视为部分可用
 extracted_summary <- file_inventory[
   ,
   .(
@@ -768,8 +741,6 @@ geo_status[, geo_files_status := fifelse(
 )]
 
 
-# ----------------------------- 8. 关键字段审计 ---------------------------------
-# 通过文件名、CSV/TSV表头、RDS metadata列名寻找关键字段
 all_detectable_text <- paste(
   c(
     file_inventory$file_name,
@@ -825,7 +796,6 @@ keyword_checks[, interpretation := fifelse(
 )]
 
 
-# ----------------------------- 9. 自动生成样本名解析表 -------------------------
 sample_name_manifest <- copy(file_inventory)
 sample_name_manifest[, rat_id_from_filename := extract_rat_id(file_name)]
 sample_name_manifest[, timepoint_from_filename := extract_timepoint(file_name)]
@@ -849,7 +819,6 @@ sample_name_manifest[, sorted_group_from_filename := fifelse(
 )]
 
 
-# ----------------------------- 10. 特殊警报 ------------------------------------
 alerts <- data.table(
   level = character(),
   geo = character(),
@@ -943,7 +912,6 @@ if (nrow(huge_files) > 0L) {
 }
 
 
-# ----------------------------- 11. 总体可进入下一步判断 ------------------------
 geo_status[, external_metadata_status := fifelse(
   !external_metadata_needed,
   "NOT_REQUIRED_AT_00",
@@ -973,7 +941,6 @@ geo_status[, readiness := fifelse(
 )]
 
 
-# ----------------------------- 12. 保存CSV和Excel -------------------------------
 metadata_dir <- file.path(PROJECT_ROOT, "01_metadata")
 report_dir <- file.path(PROJECT_ROOT, "06_reports")
 
@@ -1057,7 +1024,6 @@ saveWorkbook(
 )
 
 
-# ----------------------------- 13. 生成人类可读报告 -----------------------------
 report_lines <- c(
   "PD干细胞治疗项目｜00 手动下载数据审计报告",
   paste0("生成时间：", Sys.time()),
@@ -1100,7 +1066,6 @@ writeLines(
 )
 
 
-# ----------------------------- 14. 控制台最终结果 -------------------------------
 cat("\n")
 cat("============================================================\n")
 cat("00 手动下载数据审计完成\n")
