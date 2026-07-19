@@ -12,6 +12,10 @@ Dopaminergic marker expression alone does not prove that a candidate cell state 
 
 ![PD_Graft repository overview](figures/overview/PD_Graft_12O_annotated_public_repository_overview.png)
 
+## Selected figure highlights
+
+Selected figure PDFs are stored under `figures/12O_final_integrated_package/`.
+
 ## What this repository contains
 
 - Reproducible R analysis scripts.

@@ -22,6 +22,10 @@ Public Figure 006 is the final annotation-colour UMAP display selected for GitHu
 
 [Open public Figure 006](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
 
+## Selected figure highlights
+
+Selected figure PDFs are stored under `figures/12O_final_integrated_package/`.
+
 ## Traceability
 
 - Public short-filename mapping: `figures/manifests/12P_V4_github_public_figure_filename_mapping.csv`

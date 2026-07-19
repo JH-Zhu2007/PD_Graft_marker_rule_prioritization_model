@@ -12,6 +12,10 @@
 
 ![PD_Graft repository overview](figures/overview/PD_Graft_12O_annotated_public_repository_overview.png)
 
+## 精选图片导览
+
+精选图片 PDF 位于 `figures/12O_final_integrated_package/`。
+
 ## 本仓库包含什么
 
 - 可复现 R 分析脚本。
