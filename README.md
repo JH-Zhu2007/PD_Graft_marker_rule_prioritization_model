@@ -14,63 +14,79 @@ Dopaminergic marker expression alone does not prove that a candidate cell state 
 
 ## Selected figure highlights
 
-The selected highlights below follow the requested experimental order: **UMAP -> Safety-risk-associated score -> Heatmap -> GO -> KEGG -> Hallmark -> ROC/PR/AUC performance audit**.
+The selected highlights follow the experimental workflow order: **UMAP -> Safety-risk-associated score -> Heatmap -> GO -> KEGG -> Hallmark -> ROC/PR/AUC performance audit**.
+
+Each preview is linked to the corresponding full-resolution PDF in the final figure package.
 
 ### 1. UMAP
 
-Annotation-colour UMAP overview of candidate dopaminergic / graft-related cell states used as the first visual entry point.
+**What this figure shows:** This panel provides the entry point for the transcriptomic landscape. It places cells in a two-dimensional UMAP space and uses the final annotation-colour display to show how broad candidate cell-state programmes are distributed across the discovery dataset.
 
-![1. UMAP](figures/selected_highlights_preview_png/01_umap.png)
+It helps readers immediately see the relationship between the major annotated states before moving into score-based, marker-based and pathway-level evidence.
 
-[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+[![1. UMAP](figures/selected_highlights_preview_png/01_umap.png)](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+[Open full PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
 
 ### 2. Safety-risk-associated score
 
-Score-based view highlighting safety-risk-associated transcriptional programmes across candidate cell states.
+**What this figure shows:** This panel visualises the safety-risk-associated transcriptional score across the same cell-state landscape. It shows where risk-linked programmes, including proliferative, progenitor-like, immature or stress-associated transcriptional patterns, are concentrated.
 
-![2. Safety-risk-associated score](figures/selected_highlights_preview_png/02_safety_risk_score.png)
+Placed directly after the UMAP, it connects spatial cell-state organisation with the risk-aware layer of the prioritisation model.
 
-[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/008_main_10D_V18_main_single_panel_Figure_03_F1D_Safety-risk-associated_trans.pdf)
+[![2. Safety-risk-associated score](figures/selected_highlights_preview_png/02_safety_risk_score.png)](figures/12O_final_integrated_package/01_main_single_panel/008_main_10D_V18_main_single_panel_Figure_03_F1D_Safety-risk-associated_trans.pdf)
+
+[Open full PDF](figures/12O_final_integrated_package/01_main_single_panel/008_main_10D_V18_main_single_panel_Figure_03_F1D_Safety-risk-associated_trans.pdf)
 
 ### 3. Heatmap
 
-Candidate-state signature heatmap summarising the marker-rule-derived transcriptomic structure.
+**What this figure shows:** This heatmap summarises the marker-rule-derived signature structure across candidate states. It provides a compact view of how selected identity, maturation and risk-associated gene programmes vary across the prioritised transcriptomic groups.
 
-![3. Heatmap](figures/selected_highlights_preview_png/03_heatmap.png)
+The heatmap acts as the bridge between single-cell spatial patterns and the gene-level evidence used to define the prioritisation framework.
 
-[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/010_main_10D_V18_main_single_panel_Figure_05_F2A_Candidate-state_signature_he.pdf)
+[![3. Heatmap](figures/selected_highlights_preview_png/03_heatmap.png)](figures/12O_final_integrated_package/01_main_single_panel/010_main_10D_V18_main_single_panel_Figure_05_F2A_Candidate-state_signature_he.pdf)
+
+[Open full PDF](figures/12O_final_integrated_package/01_main_single_panel/010_main_10D_V18_main_single_panel_Figure_05_F2A_Candidate-state_signature_he.pdf)
 
 ### 4. Gene Ontology (GO)
 
-GO enrichment figure showing functional themes associated with prioritised candidate states.
+**What this figure shows:** The GO enrichment panel translates the marker/signature layer into functional biological terms. It summarises the biological processes and cellular programmes associated with the prioritised candidate states.
 
-![4. Gene Ontology (GO)](figures/selected_highlights_preview_png/04_go.png)
+This provides a functional interpretation layer after the heatmap, helping readers move from gene lists to organised biological themes.
 
-[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/012_main_10D_V18_main_single_panel_Figure_07_F2C_Gene_Ontology_enrichment_10D.pdf)
+[![4. Gene Ontology (GO)](figures/selected_highlights_preview_png/04_go.png)](figures/12O_final_integrated_package/01_main_single_panel/012_main_10D_V18_main_single_panel_Figure_07_F2C_Gene_Ontology_enrichment_10D.pdf)
+
+[Open full PDF](figures/12O_final_integrated_package/01_main_single_panel/012_main_10D_V18_main_single_panel_Figure_07_F2C_Gene_Ontology_enrichment_10D.pdf)
 
 ### 5. KEGG
 
-KEGG enrichment figure linking prioritised states to pathway-level biological context.
+**What this figure shows:** The KEGG panel places the candidate-state gene evidence into curated pathway context. It highlights pathway-level structure that complements the GO biological-process view.
 
-![5. KEGG](figures/selected_highlights_preview_png/05_kegg.png)
+Together with GO, this panel helps organise the prioritised transcriptomic signal into interpretable pathway modules.
 
-[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/013_main_10D_V18_main_single_panel_Figure_08_F2D_KEGG_enrichment_10D_V18_sing.pdf)
+[![5. KEGG](figures/selected_highlights_preview_png/05_kegg.png)](figures/12O_final_integrated_package/01_main_single_panel/013_main_10D_V18_main_single_panel_Figure_08_F2D_KEGG_enrichment_10D_V18_sing.pdf)
+
+[Open full PDF](figures/12O_final_integrated_package/01_main_single_panel/013_main_10D_V18_main_single_panel_Figure_08_F2D_KEGG_enrichment_10D_V18_sing.pdf)
 
 ### 6. Hallmark
 
-Hallmark GSEA figure summarising higher-order programme support for the prioritisation framework.
+**What this figure shows:** The Hallmark panel condenses enrichment evidence into higher-order transcriptional programmes. It provides a broad programme-level summary that complements the more detailed GO and KEGG views.
 
-![6. Hallmark](figures/selected_highlights_preview_png/06_hallmark.png)
+This figure helps show whether the candidate-state evidence aligns with coherent transcriptional programmes rather than isolated gene-level changes.
 
-[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/014_main_10D_V18_main_single_panel_Figure_09_F2E_Hallmark_GSEA_10D_V18_single.pdf)
+[![6. Hallmark](figures/selected_highlights_preview_png/06_hallmark.png)](figures/12O_final_integrated_package/01_main_single_panel/014_main_10D_V18_main_single_panel_Figure_09_F2E_Hallmark_GSEA_10D_V18_single.pdf)
+
+[Open full PDF](figures/12O_final_integrated_package/01_main_single_panel/014_main_10D_V18_main_single_panel_Figure_09_F2E_Hallmark_GSEA_10D_V18_single.pdf)
 
 ### 7. ROC / PR / AUC performance audit
 
-Machine-learning audit figure showing ROC/PR/AUC-related performance checks; included last to follow the requested experimental order.
+**What this figure shows:** The ROC/PR/AUC audit panel summarises the model-performance layer of the workflow. It shows how the weak-label machine-learning component separates the marker-rule-defined comparison tasks and provides an audit trail for the prioritisation model.
 
-![7. ROC / PR / AUC performance audit](figures/selected_highlights_preview_png/07_roc_pr_auc_performance_audit.png)
+Placed last, this figure completes the sequence from cell-state visualisation, to signature evidence, to pathway interpretation, and finally to model-performance auditing.
 
-[Open PDF](figures/12O_final_integrated_package/02_ml_audit_required_ROC_PR_AUC/031_ml_auc_11J_ML_audit_ROC_PR_AUC_11J_FINAL_FigB_ROC_PR_performance_audit.pdf)
+[![7. ROC / PR / AUC performance audit](figures/selected_highlights_preview_png/07_roc_pr_auc.png)](figures/12O_final_integrated_package/02_ml_audit_required_ROC_PR_AUC/031_ml_auc_11J_ML_audit_ROC_PR_AUC_11J_FINAL_FigB_ROC_PR_performance_audit.pdf)
+
+[Open full PDF](figures/12O_final_integrated_package/02_ml_audit_required_ROC_PR_AUC/031_ml_auc_11J_ML_audit_ROC_PR_AUC_11J_FINAL_FigB_ROC_PR_performance_audit.pdf)
 
 ## What this repository contains
 
@@ -103,13 +119,13 @@ Total retained public PDF files detected: 201.
 ## Repository structure
 
 ```text
-docs/        manuscript-facing notes or explanatory documents
-figures/     public figure package, overview graphics, annotation guide and manifests
-metadata/    dataset metadata and provenance-supporting files
-scripts/     reproducible analysis and figure-generation scripts
-tables/      public tables and manifest-style outputs
-README.md    English public summary
-README_zh.md Chinese public summary
+docs/          manuscript-facing notes or explanatory documents
+figures/       public figure package, overview graphics, annotation guide and manifests
+metadata/      dataset metadata and provenance-supporting files
+scripts/       reproducible analysis and figure-generation scripts
+tables/        public tables and manifest-style outputs
+README.md      English public summary
+README_zh.md   Chinese public summary
 ```
 
 ## Traceability files
