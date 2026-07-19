@@ -10,83 +10,67 @@ Dopaminergic marker expression alone does not prove that a candidate cell state 
 
 ## Visual overview
 
-![PD_Graft repository overview](figures/overview/PD_Graft_12O_annotated_public_repository_overview.png)
+![PD_Graft public package overview](figures/overview/PD_Graft_12O_annotated_public_repository_overview.png)
 
 ## Selected figure highlights
 
-Selected low-resolution previews are embedded for quick browsing. Click any preview to open the full PDF.
+The selected highlights below follow the requested experimental order: **UMAP -> Safety-risk-associated score -> Heatmap -> GO -> KEGG -> Hallmark -> ROC/PR/AUC performance audit**.
 
-### Public Figure 006
+### 1. UMAP
 
-[![Public Figure 006](figures/selected_highlights_preview_png/01_public_figure_006.png)](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+Annotation-colour UMAP overview of candidate dopaminergic / graft-related cell states used as the first visual entry point.
 
-**Category:** Main UMAP
+![1. UMAP](figures/selected_highlights_preview_png/01_umap.png)
 
-Final annotation-colour UMAP display selected for GitHub.
+[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
 
-### DA/projection molecular score
+### 2. Safety-risk-associated score
 
-[![DA/projection molecular score](figures/selected_highlights_preview_png/02_projection_score.png)](figures/12O_final_integrated_package/01_main_single_panel/007_main_10D_V18_main_single_panel_Figure_02_F1C_DA_projection-associated_mol.pdf)
+Score-based view highlighting safety-risk-associated transcriptional programmes across candidate cell states.
 
-**Category:** Main evidence
+![2. Safety-risk-associated score](figures/selected_highlights_preview_png/02_safety_risk_score.png)
 
-Projection-associated molecular competence and DA-related score evidence.
+[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/008_main_10D_V18_main_single_panel_Figure_03_F1D_Safety-risk-associated_trans.pdf)
 
-### Safety-risk transcriptional score
+### 3. Heatmap
 
-[![Safety-risk transcriptional score](figures/selected_highlights_preview_png/03_safety_risk_score.png)](figures/12O_final_integrated_package/01_main_single_panel/008_main_10D_V18_main_single_panel_Figure_03_F1D_Safety-risk-associated_trans.pdf)
+Candidate-state signature heatmap summarising the marker-rule-derived transcriptomic structure.
 
-**Category:** Main evidence
+![3. Heatmap](figures/selected_highlights_preview_png/03_heatmap.png)
 
-Risk-associated transcriptional programmes used by the prioritisation framework.
+[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/010_main_10D_V18_main_single_panel_Figure_05_F2A_Candidate-state_signature_he.pdf)
 
-### Candidate-state signature heatmap
+### 4. Gene Ontology (GO)
 
-[![Candidate-state signature heatmap](figures/selected_highlights_preview_png/04_signature_heatmap.png)](figures/12O_final_integrated_package/01_main_single_panel/010_main_10D_V18_main_single_panel_Figure_05_F2A_Candidate-state_signature_he.pdf)
+GO enrichment figure showing functional themes associated with prioritised candidate states.
 
-**Category:** Main evidence
+![4. Gene Ontology (GO)](figures/selected_highlights_preview_png/04_go.png)
 
-Candidate-state marker/signature support across retained transcriptomic states.
+[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/012_main_10D_V18_main_single_panel_Figure_07_F2C_Gene_Ontology_enrichment_10D.pdf)
 
-### Pathway / enrichment evidence
+### 5. KEGG
 
-[![Pathway / enrichment evidence](figures/selected_highlights_preview_png/05_pathway_enrichment.png)](figures/12O_final_integrated_package/01_main_single_panel/014_main_10D_V18_main_single_panel_Figure_09_F2E_Hallmark_GSEA_10D_V18_single.pdf)
+KEGG enrichment figure linking prioritised states to pathway-level biological context.
 
-**Category:** Pathway evidence
+![5. KEGG](figures/selected_highlights_preview_png/05_kegg.png)
 
-GO/KEGG/Hallmark enrichment evidence supporting transcriptomic interpretation.
+[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/013_main_10D_V18_main_single_panel_Figure_08_F2D_KEGG_enrichment_10D_V18_sing.pdf)
 
-### ROC/PR/AUC performance audit
+### 6. Hallmark
 
-[![ROC/PR/AUC performance audit](figures/selected_highlights_preview_png/06_roc_pr_auc.png)](figures/12O_final_integrated_package/02_ml_audit_required_ROC_PR_AUC/031_ml_auc_11J_ML_audit_ROC_PR_AUC_11J_FINAL_FigB_ROC_PR_performance_audit.pdf)
+Hallmark GSEA figure summarising higher-order programme support for the prioritisation framework.
 
-**Category:** ML audit
+![6. Hallmark](figures/selected_highlights_preview_png/06_hallmark.png)
 
-Required machine-learning audit figure documenting ROC/PR/AUC checks.
+[Open PDF](figures/12O_final_integrated_package/01_main_single_panel/014_main_10D_V18_main_single_panel_Figure_09_F2E_Hallmark_GSEA_10D_V18_single.pdf)
 
-### Feature-importance / marker-overlap audit
+### 7. ROC / PR / AUC performance audit
 
-[![Feature-importance / marker-overlap audit](figures/selected_highlights_preview_png/07_feature_importance.png)](figures/12O_final_integrated_package/02_ml_audit_required_ROC_PR_AUC/032_ml_auc_11J_ML_audit_ROC_PR_AUC_11J_FINAL_FigC_feature_importance_marker_o.pdf)
+Machine-learning audit figure showing ROC/PR/AUC-related performance checks; included last to follow the requested experimental order.
 
-**Category:** ML audit
+![7. ROC / PR / AUC performance audit](figures/selected_highlights_preview_png/07_roc_pr_auc_performance_audit.png)
 
-Audits whether model features overlap with marker-rule-derived evidence.
-
-### External validation support
-
-[![External validation support](figures/selected_highlights_preview_png/08_external_validation.png)](figures/12O_final_integrated_package/01_main_single_panel/022_main_10D_V18_main_single_panel_Figure_17_F4C_GSE183248_external_priority_.pdf)
-
-**Category:** External validation
-
-External/contextual transcriptomic support for the prioritisation output.
-
-### Disease-context support
-
-[![Disease-context support](figures/selected_highlights_preview_png/09_disease_context.png)](figures/12O_final_integrated_package/01_main_single_panel/029_main_10D_V18_main_single_panel_Figure_24_F5E_GSE243639_context_priority_i.pdf)
-
-**Category:** Disease-context support
-
-Disease-context transcriptomic evidence supporting candidate-state interpretation.
+[Open PDF](figures/12O_final_integrated_package/02_ml_audit_required_ROC_PR_AUC/031_ml_auc_11J_ML_audit_ROC_PR_AUC_11J_FINAL_FigB_ROC_PR_performance_audit.pdf)
 
 ## What this repository contains
 
@@ -116,26 +100,16 @@ Total retained public PDF files detected: 201.
 
 `06_optional_context_not_for_strong_claims` is intentionally excluded from the public-facing package.
 
-## Public Figure 006
-
-Public Figure 006 uses the final annotation-colour UMAP display selected for GitHub. The plot does not show cluster numbers, n, maj or majority percentages; the right-side legend explains what each colour represents.
-
-[Open public Figure 006](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
-
-## Machine-learning audit
-
-The `02_ml_audit_required_ROC_PR_AUC` folder is intentionally retained. These figures document ROC/PR/AUC-related model-performance checks and feature/marker-overlap audits. They support auditability of the marker-rule-derived prioritisation framework; they do not establish a clinical prediction model.
-
 ## Repository structure
 
 ```text
-docs/          manuscript-facing notes or explanatory documents
-figures/       public figure package, overview graphics, annotation guide and manifests
-metadata/      dataset metadata and provenance-supporting files
-scripts/       reproducible analysis and figure-generation scripts
-tables/        public tables and manifest-style outputs
-README.md      English public summary
-README_zh.md   Chinese public summary
+docs/        manuscript-facing notes or explanatory documents
+figures/     public figure package, overview graphics, annotation guide and manifests
+metadata/    dataset metadata and provenance-supporting files
+scripts/     reproducible analysis and figure-generation scripts
+tables/      public tables and manifest-style outputs
+README.md    English public summary
+README_zh.md Chinese public summary
 ```
 
 ## Traceability files
@@ -160,15 +134,10 @@ README_zh.md   Chinese public summary
 - Patient outcome prediction.
 - Therapeutic-response prediction.
 - Validated diagnostic, prognostic or therapeutic biomarker discovery.
-- Graft efficacy or clinical safety prediction.
 - Anatomical-projection proof.
-- Barcode-confirmed lineage tracing.
+- Barcode-lineage proof.
 - Genetic causality or disease-mechanism proof.
 
-## Reproducibility
+## Release note
 
-Raw public datasets should be obtained from their original repositories. This GitHub package focuses on scripts, metadata, manifests, traceability records and selected public-facing result figures required to understand and audit the computational workflow.
-
-## Language
-
-A Chinese summary is available in [README_zh.md](README_zh.md).
+The public release is designed for source traceability, transparent figure navigation and cautious interpretation of a computational prioritisation framework.
