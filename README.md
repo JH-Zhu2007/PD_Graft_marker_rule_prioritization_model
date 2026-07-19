@@ -6,75 +6,95 @@ A source-traceable computational framework for prioritising candidate dopaminerg
 
 ## Visual overview
 
-![PD_Graft final package overview](figures/overview/PD_Graft_12O_public_repository_overview.png)
+### 12P V14 Figure 006
 
-### Selected figure previews
+Public Figure 006 has been replaced with an original-cluster colour UMAP: no numbers or text are printed on the plot; the right-side legend maps each cluster colour to its annotation/name.
 
-![Selected preview 1](figures/preview_png/01__main__10D_V18_main_single_panel.png)
+[Open Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
 
-![Selected preview 2](figures/preview_png/02__main__10D_V18_main_single_panel.png)
 
-![Selected preview 3](figures/preview_png/03__main__10D_V18_main_single_panel.png)
+### 12P V13 Figure 006
 
-![Selected preview 4](figures/preview_png/04__main__10D_V18_main_single_panel.png)
+Public Figure 006 has been replaced with a clean annotation-colour UMAP: no cluster numbers are shown on the plot; the right-side legend explains what each colour represents.
 
-![Selected preview 5](figures/preview_png/05__ml_auc__11J_ML_audit_ROC_PR_AUC.png)
+[Open Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
 
-![Selected preview 6](figures/preview_png/06__supp__11H_integrated_evidence_mark.png)
 
-## Final figure package
+### 12P V12 Figure 006
 
-This repository display is based on the **12O final integrated figure package** generated after the 12N no-overclaim audit. The GitHub-facing figure package uses short public filenames for Windows/GitHub compatibility while preserving traceability through `figures/manifests/12P_V3_github_public_figure_filename_mapping.csv`.
+Public Figure 006 has been replaced with a scRNA/cluster-number/name-key style cluster UMAP: the left panel preserves the original numbered cluster map, while the right panel provides a clean cluster-number-to-name key.
 
-Figure files are stored under:
+[Open Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
 
-- `figures/12O_final_integrated_package/01_main_single_panel/`
-- `figures/12O_final_integrated_package/02_ml_audit_required_ROC_PR_AUC/`
-- `figures/12O_final_integrated_package/03_publication_panel_package/`
-- `figures/12O_final_integrated_package/04_supplementary_supporting_evidence/`
-- `figures/12O_final_integrated_package/05_audit_boundary_reproducibility/`
-- `figures/12O_final_integrated_package/06_optional_context_not_for_strong_claims/`
 
-### Figure counts
+### 12P V11 Figure 006
+
+Public Figure 006 has been replaced with a scRNA/Nature-reference style cluster UMAP: the left panel preserves the original numbered cluster map, while the right panel provides a clean cluster-to-majority-annotation key.
+
+[Open Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+### 12P V10 Figure 006
+
+Public Figure 006 has been replaced with a Nature-style true cluster-level annotated UMAP: original clusters are preserved, compact C0/C1/C2 tags are shown on the UMAP, and the full `C<cluster> = majority annotation` mapping is shown in a clean right-side key.
+
+[Open Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+### 12P V9 Figure 006
+
+Public Figure 006 has been replaced with a true cluster-level annotated UMAP: the original cluster structure is preserved and each cluster is labelled as `C<cluster>: <majority annotation>`. This is not the broad 04D/05B class-collapsed map.
+
+[Open Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+### 12P V8 Figure 006
+
+Public Figure 006 has been replaced with the GSE132758 05B safety contrast class / DA-projection-associated class UMAP. No new image was generated; an existing final annotated PDF was copied into the public Figure 006 position.
+
+[Open Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+### 12P V7 annotated Figure 006
+
+The public Figure 006 PDF has been replaced with the annotated GSE132758 04D conservative cell-state UMAP. No new image was generated; the repository file was replaced by copying the existing final annotated PDF.
+
+[Open annotated Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+![PD_Graft annotated final package overview](figures/overview/PD_Graft_12O_annotated_public_repository_overview.png)
+
+## Final annotated figure package
+
+This repository display is based on the **12O final integrated figure package** generated after the 12N no-overclaim audit.
+
+This GitHub-facing version intentionally **excludes** `06_optional_context_not_for_strong_claims` and keeps an annotated figure guide instead. Public figure filenames are shortened for Windows/GitHub compatibility, with full traceability in `figures/manifests/12P_V4_github_public_figure_filename_mapping.csv`.
+
+The annotation table is:
+
+`figures/manifests/12P_V4_github_public_figure_annotation_table.csv`
+
+A readable guide is available at:
+
+`figures/ANNOTATED_FIGURE_GUIDE.md`
+
+### Retained figure groups
 
 - `01_main_single_panel`: 24 PDF files
 - `02_ml_audit_required_ROC_PR_AUC`: 4 PDF files
 - `03_publication_panel_package`: 145 PDF files
 - `04_supplementary_supporting_evidence`: 10 PDF files
 - `05_audit_boundary_reproducibility`: 18 PDF files
-- `06_optional_context_not_for_strong_claims`: 11 PDF files
 
-## Scientific question
-
-Dopaminergic marker expression alone does not establish that a candidate cell state combines appropriate functional identity, maturation-related competence and a favourable risk-associated transcriptional profile. This project creates a transparent cross-dataset prioritisation layer to identify candidate states and marker signatures for subsequent experimental testing.
-
-## Framework
-
-1. Curate public transcriptomic datasets and source provenance.
-2. quantify DA-like, A9/A10-like and projection-associated molecular competence programmes.
-3. quantify proliferation, progenitor, immaturity, stress and related risk-associated programmes.
-4. assign marker-rule-derived candidate-state priority structure.
-5. audit robustness using threshold sensitivity, negative controls, feature-leakage checks, leave-one-dataset-out evaluation and external-dataset assessment.
-6. integrate candidate marker signatures, evidence tiers and reproducibility records.
+Excluded optional context-only PDFs from group 06: 11
 
 ## Required ML audit
 
 The `02_ml_audit_required_ROC_PR_AUC` folder is intentionally retained. It includes the ROC/PR/AUC-related model-performance audit and feature-importance/marker-overlap checks. These figures support auditability of the marker-rule-derived prioritisation structure; they do **not** establish clinical prediction.
 
-## Core outputs
+## Scientific question
 
-- candidate transcriptomic cell-state prioritisation;
-- identity-risk evidence maps;
-- candidate transcriptomic marker signatures;
-- pseudotime and maturation-related support;
-- negative-control, sensitivity and cross-dataset assessment outputs;
-- source manifests, provenance tables and claim-boundary materials.
-
-## Core datasets
-
-Core workflow datasets include `GSE178265`, `GSE132758`, `GSE200610`, `GSE204795`, `GSE204796`, `GSE233885` and `GSE157783`.
-
-Independent/context assessment datasets include `GSE183248` and `GSE243639`. Dataset roles and source details are recorded in `metadata/` and the provenance documents.
+Dopaminergic marker expression alone does not establish that a candidate cell state combines appropriate functional identity, maturation-related competence and a favourable risk-associated transcriptional profile. This project creates a transparent cross-dataset prioritisation layer to identify candidate states and marker signatures for subsequent experimental testing.
 
 ## Interpretation boundary
 
@@ -97,7 +117,7 @@ Independent/context assessment datasets include `GSE183248` and `GSE243639`. Dat
 
 ## Reproducibility and data availability
 
-Raw GEO data and large intermediate R objects are not redistributed. They should be obtained from the original public repositories. This public package provides scripts, source manifests, metadata, provenance tables, selected result-support materials and the final 12O-integrated figure package.
+Raw GEO data and large intermediate R objects are not redistributed. They should be obtained from the original public repositories. This public package provides scripts, source manifests, metadata, provenance tables, selected result-support materials and the annotated 12O-integrated figure package.
 
 ## Language
 

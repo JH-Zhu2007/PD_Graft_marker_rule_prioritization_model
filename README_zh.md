@@ -6,37 +6,82 @@
 
 ## 项目总览
 
-![PD_Graft final package overview](figures/overview/PD_Graft_12O_public_repository_overview.png)
+### 12P V14 Figure 006
 
-## 最终图片包
+公开 Figure 006 已替换为原始 cluster 上色版 UMAP：图上不再显示编号或文字；右侧 legend 用每种颜色对应一个原始 cluster，并给出该 cluster 的 annotation/name。
 
-当前 GitHub 展示基于 **12O final integrated figure package**。12O 是在 12N no-overclaim audit 之后生成的最终图片整合包，包含最新单图版主图、必需的 ROC/PR/AUC 机器学习审计图、投稿图包、支持证据以及结论边界和可重复性材料。
+[打开 Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
 
-GitHub 版本使用短文件名，避免 Windows 路径过长。原始 12O 文件名与公开短文件名的对应关系见：
 
-`figures/manifests/12P_V3_github_public_figure_filename_mapping.csv`
+### 12P V13 Figure 006
 
-图片位于：
+公开 Figure 006 已替换为干净的 annotation-colour UMAP：图中不显示 cluster 编号，只在右侧 legend 显示每种颜色对应的 annotation/state 名称。
 
-- `figures/12O_final_integrated_package/01_main_single_panel/`
-- `figures/12O_final_integrated_package/02_ml_audit_required_ROC_PR_AUC/`
-- `figures/12O_final_integrated_package/03_publication_panel_package/`
-- `figures/12O_final_integrated_package/04_supplementary_supporting_evidence/`
-- `figures/12O_final_integrated_package/05_audit_boundary_reproducibility/`
-- `figures/12O_final_integrated_package/06_optional_context_not_for_strong_claims/`
+[打开 Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
 
-### 图片数量
+
+### 12P V12 Figure 006
+
+公开 Figure 006 已替换为更接近 scRNA/publication 论文风格的 cluster UMAP：左侧保留原始 cluster map 和数字编号，右侧用 cluster-name key 解释每个 cluster 的 annotation name。
+
+[打开 Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+### 12P V11 Figure 006
+
+公开 Figure 006 已替换为更接近 scRNA/Nature 论文风格的 cluster UMAP：左侧保留原始 cluster map 和数字编号，右侧用 annotation key 解释每个 cluster 的 majority annotation。
+
+[打开 Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+### 12P V10 Figure 006
+
+公开 Figure 006 已替换为 Nature-style 的真正 cluster-level annotated UMAP：保留原始 cluster 结构，UMAP 上只放简洁的 C0/C1/C2 标签，完整的 `C<cluster> = majority annotation` 放在右侧 annotation key 中。
+
+[打开 Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+### 12P V9 Figure 006
+
+公开 Figure 006 已替换为真正的 cluster-level annotated UMAP：保留原始 cluster 结构，并给每个 cluster 标注 `C<cluster>: <majority annotation>`。这不是 04D/05B 的少数类别归并图。
+
+[打开 Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+### 12P V8 Figure 006
+
+公开 Figure 006 已替换为 GSE132758 05B safety contrast class / DA-projection-associated class UMAP。这个版本不是数字 cluster 图，也不是 04D 的弱展示版，而是更适合 GitHub 展示的 annotation/class 图。
+
+[打开 Figure 006 PDF](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+
+
+![PD_Graft annotated final package overview](figures/overview/PD_Graft_12O_annotated_public_repository_overview.png)
+
+## 最终带 annotation 的图片包
+
+当前 GitHub 展示基于 **12O final integrated figure package**。这个版本已经按你的要求去掉 `06_optional_context_not_for_strong_claims`，并额外加入 annotation 表和可读说明。
+
+公开短文件名与原始文件名对应关系：
+
+`figures/manifests/12P_V4_github_public_figure_filename_mapping.csv`
+
+annotation 表：
+
+`figures/manifests/12P_V4_github_public_figure_annotation_table.csv`
+
+可读版 annotation guide：
+
+`figures/ANNOTATED_FIGURE_GUIDE.md`
+
+### 保留图片组
 
 - `01_main_single_panel`：24 个 PDF
 - `02_ml_audit_required_ROC_PR_AUC`：4 个 PDF
 - `03_publication_panel_package`：145 个 PDF
 - `04_supplementary_supporting_evidence`：10 个 PDF
 - `05_audit_boundary_reproducibility`：18 个 PDF
-- `06_optional_context_not_for_strong_claims`：11 个 PDF
 
-## 要解决的问题
-
-单纯表达多巴胺能标志物，并不能证明一个候选细胞状态同时具有合适的功能身份、成熟／投射相关分子能力以及较低的风险相关转录特征。本项目建立一个透明、可审计、跨数据集的计算优先级层，为后续湿实验、分选方案和功能验证缩小候选范围。
+已排除 06 optional context-only 图片：11 个 PDF
 
 ## 必需的 ML 审计图
 
