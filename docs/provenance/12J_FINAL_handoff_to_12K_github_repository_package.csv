@@ -1,0 +1,10 @@
+"github_package_item","required_content","source_file_or_table","ready_for_12K"
+"README project framing","Frame project as DA neuron/graft-related transcriptomic prioritisation framework.","12I/12J text outputs",TRUE
+"Data/source manifest","List accessions and dataset roles from locked source-role tables.","10G/10H/12J provenance tables",TRUE
+"Workflow script index","List scripts in intended order and mark locked modules.","01_scripts directory plus 12J module provenance",TRUE
+"Module provenance table","Include 12J locked module provenance table.","D:/PD_Graft_Project/03_tables/12J_methods_reproducibility_refresh_FINAL_COMPLETE_STANDALONE/12J_FINAL_locked_module_provenance_table.csv",TRUE
+"Reproducibility checklist","Include 12J reproducibility checklist.","D:/PD_Graft_Project/03_tables/12J_methods_reproducibility_refresh_FINAL_COMPLETE_STANDALONE/12J_FINAL_reproducibility_checklist.csv",TRUE
+"Figure/table provenance","Include 12F/12G panel and caption provenance tables.","12F panel assembly manifest; 12G panel caption table",TRUE
+"Claim-boundary statement","State no clinical prediction, validated biomarker, graft efficacy/safety, anatomical projection or barcode-lineage proof.","D:/PD_Graft_Project/03_tables/12J_methods_reproducibility_refresh_FINAL_COMPLETE_STANDALONE/12J_FINAL_claim_boundary_statement.csv",TRUE
+"Manuscript text outputs","Include Results, Discussion, Methods draft text outputs.","12H/12I/12J manuscript text folders",TRUE
+"Code availability statement","State scripts and derived tables are provided for reproducibility; raw data remain at public source repositories.","D:/PD_Graft_Project/09_manuscript/12J_methods_reproducibility_refresh_FINAL_COMPLETE_STANDALONE/12J_FINAL_code_availability_statement.txt",TRUE
