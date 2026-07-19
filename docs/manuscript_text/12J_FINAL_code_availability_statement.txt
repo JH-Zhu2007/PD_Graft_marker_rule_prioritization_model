@@ -1,0 +1,4 @@
+Code availability
+=================
+
+All analysis scripts used for the final source-locked manuscript workflow are organized as a modular R workflow. The final manuscript-preparation modules were run as standalone scripts and were designed not to read same-module old outputs. Derived tables, figure manifests, source-panel manifests, Results/Discussion/Methods text outputs and claim-boundary audits are provided to support reproducibility. Raw public data should be obtained from their original public repositories according to the dataset accession information.
