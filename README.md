@@ -14,20 +14,19 @@ Dopaminergic marker expression alone does not prove that a candidate cell state 
 
 ## What this repository contains
 
-- Reproducible analysis scripts.
+- Reproducible R analysis scripts.
 - Source manifests and provenance tables.
-- Metadata and audit files supporting source traceability.
-- Final GitHub-facing 12O integrated figure package.
-- V18 single-panel main figure outputs.
+- Dataset metadata and audit files supporting source traceability.
+- Final GitHub-facing integrated figure package.
 - Required ROC/PR/AUC machine-learning audit figures.
 - Claim-boundary and no-overclaim audit materials.
-- English and Chinese project summaries.
+- English and Chinese public project summaries.
 
 This repository does not redistribute raw GEO data, large intermediate R objects, private local files, or submission-system-only materials.
 
 ## Final figure package
 
-The GitHub-facing final figure package is stored in `figures/12O_final_integrated_package`.
+The final public figure package is stored in `figures/12O_final_integrated_package`.
 
 Retained figure groups:
 
@@ -39,7 +38,7 @@ Retained figure groups:
 
 Total retained public PDF files detected: 201.
 
-Optional context-only group 06 present in public package: no.
+`06_optional_context_not_for_strong_claims` is intentionally excluded from the public-facing package.
 
 ## Public Figure 006
 
@@ -54,21 +53,20 @@ The `02_ml_audit_required_ROC_PR_AUC` folder is intentionally retained. These fi
 ## Repository structure
 
 ```text
-documents/      manuscript-facing notes, reports or explanatory files
-figures/        public figure package, overview graphics, annotation guide and manifests
-metadata/       dataset metadata and provenance-supporting files
-scripts/        reproducible analysis and figure-generation scripts
-README.md       English public summary
-README_zh.md    Chinese public summary
+docs/          manuscript-facing notes or explanatory documents
+figures/       public figure package, overview graphics, annotation guide and manifests
+metadata/      dataset metadata and provenance-supporting files
+scripts/       reproducible analysis and figure-generation scripts
+tables/        public tables and manifest-style outputs
+README.md      English public summary
+README_zh.md   Chinese public summary
 ```
 
 ## Traceability files
 
-Public short-filename mapping: `figures/manifests/12P_V4_github_public_figure_filename_mapping.csv`
-
-Figure annotation table: `figures/manifests/12P_V4_github_public_figure_annotation_table.csv`
-
-Readable figure guide: `figures/ANNOTATED_FIGURE_GUIDE.md`
+- Public short-filename mapping: `figures/manifests/12P_V4_github_public_figure_filename_mapping.csv`
+- Figure annotation table: `figures/manifests/12P_V4_github_public_figure_annotation_table.csv`
+- Readable figure guide: `figures/ANNOTATED_FIGURE_GUIDE.md`
 
 ## Interpretation boundary
 

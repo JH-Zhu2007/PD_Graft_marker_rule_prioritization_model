@@ -1,6 +1,6 @@
 # Figures
 
-This folder contains the public GitHub-facing figure package for the PD_Graft marker-rule-derived prioritisation framework.
+This folder contains the final public GitHub-facing figure package for the marker-rule-derived prioritisation framework.
 
 ## Final package
 
@@ -24,11 +24,9 @@ Public Figure 006 is the final annotation-colour UMAP display selected for GitHu
 
 ## Traceability
 
-Public short-filename mapping: `figures/manifests/12P_V4_github_public_figure_filename_mapping.csv`
-
-Figure annotation table: `figures/manifests/12P_V4_github_public_figure_annotation_table.csv`
-
-Readable figure guide: `figures/ANNOTATED_FIGURE_GUIDE.md`
+- Public short-filename mapping: `figures/manifests/12P_V4_github_public_figure_filename_mapping.csv`
+- Figure annotation table: `figures/manifests/12P_V4_github_public_figure_annotation_table.csv`
+- Readable figure guide: `figures/ANNOTATED_FIGURE_GUIDE.md`
 
 ## Excluded group
 
