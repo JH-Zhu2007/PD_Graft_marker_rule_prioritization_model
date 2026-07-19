@@ -48,7 +48,7 @@
 
 Public Figure 006 使用最终选定的 annotation-colour UMAP 展示版本：图中不显示 cluster 编号、n、maj 或 majority percentage；右侧 legend 说明每种颜色代表什么 annotation/state。
 
-[打开 Public Figure 006](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+Public Figure 006 位于 `figures/12O_final_integrated_package/01_main_single_panel/`。
 
 ## 机器学习审计
 

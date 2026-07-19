@@ -48,7 +48,7 @@ Total retained public PDF files detected: 201.
 
 Public Figure 006 uses the final annotation-colour UMAP display selected for GitHub. The plot does not show cluster numbers, n, maj or majority percentages; the right-side legend explains what each colour represents.
 
-[Open public Figure 006](figures/12O_final_integrated_package/01_main_single_panel/006_main_10D_V18_main_single_panel_Figure_01_F1B_Representative_discovery-dat.pdf)
+Public Figure 006 is stored under `figures/12O_final_integrated_package/01_main_single_panel/`.
 
 ## Machine-learning audit
 
